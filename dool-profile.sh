@@ -1,2 +1,2 @@
 alias dstat=dool
-alias dool="command dool -alp 5 2500"
+alias dool="command dool -a 5 2500"
