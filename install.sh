@@ -9,7 +9,7 @@ ln -sf $(command -v dool) $(command -v dstat||echo /usr/bin/dstat)
 source /etc/profile.d/dool.sh
 command -v dool
 command -v dstat
-timeout 3 dool -alp 5 500||true
+timeout 3 dool ||true
 timeout 3 dool||true
-timeout 3 dstat -alp 5 500||true
+timeout 3 dstat ||true
 timeout 3 dstat||true
