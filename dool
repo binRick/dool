@@ -2108,7 +2108,10 @@ def dchg(var, width, base):
     "Convert decimal to string given base and length"
     c = 0
     while True:
-        ret = str(int(round(var)))
+        try:
+            ret = str(int(round(var)))
+        except:
+            ret = 9999999999
         if len(ret) <= width:
             break
         var = var / base
