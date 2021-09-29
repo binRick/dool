@@ -2111,7 +2111,7 @@ def dchg(var, width, base):
         try:
             ret = str(int(round(var)))
         except:
-            ret = 9999999999
+            ret = '9999999999'
         if len(ret) <= width:
             break
         var = var / base
