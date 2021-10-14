@@ -2,6 +2,7 @@
 set -e
 cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 #set -x
+command -v make >/dev/null || dnf -y install make
 make install
 rsync dool.conf /etc/sysconfig/dool.conf
 rsync dool-profile.sh /etc/profile.d/dool.sh
